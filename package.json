@@ -1,0 +1,13 @@
+{
+  "name": "droneshield-qa-task",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Jithin Jose Jacob",
+  "license": "ISC",
+  "description": "QA Test for DroneShield",
+  "devDependencies": {
+    "@playwright/test": "^1.44.1",
+    "@types/node": "^22.10.5"
+  }
+}
