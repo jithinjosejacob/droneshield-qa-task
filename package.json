@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "ui-test": "npx playwright test",
-    "api-test" : "npx playwright test --config=playwright.api.config.ts"
+    "ui-test": "npx playwright test --config=config/playwright.ui.config.ts",
+    "api-test": "npx playwright test --config=playwright.api.config.ts"
   },
   "author": "Jithin Jose Jacob",
   "license": "ISC",
   "description": "QA Test for DroneShield",
   "devDependencies": {
     "@playwright/test": "^1.44.1",
-    "@types/node": "^22.10.5"
+    "@types/node": "^22.10.5",
+    "dotenv": "^16.4.7"
   }
 }

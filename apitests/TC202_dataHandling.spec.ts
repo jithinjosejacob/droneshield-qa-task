@@ -6,7 +6,7 @@ test.beforeAll(async ({ request }) => {
 });
 
 test.skip('should create an api test request', async ({ request }) => {
-  const responseStatus = await request.get(`http://petstore.swagger.io/v2/pet/findByStatus?status=available`)
+  const responseStatus = await request.get(`${process.env.API_URL}/pet/findByStatus?status=available`)
   expect(responseStatus.ok()).toBeTruthy();
 })
 

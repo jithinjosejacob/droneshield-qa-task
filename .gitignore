@@ -5,3 +5,4 @@ node_modules/
 /playwright/.cache/
 node_modules
 .env
+storage

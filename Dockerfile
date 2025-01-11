@@ -78,4 +78,4 @@ RUN rm -rf /usr/lib/apt/methods/rsh \
 
 WORKDIR /app 
 
-CMD npm run test
+CMD npm run ui-test
