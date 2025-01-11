@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "ui-test": "npx playwright test --config=config/playwright.ui.config.ts",
-    "api-test": "npx playwright test --config=playwright.api.config.ts"
+    "api-test": "npx playwright test --config=config/playwright.api.config.ts"
   },
   "author": "Jithin Jose Jacob",
   "license": "ISC",
