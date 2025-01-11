@@ -2,7 +2,10 @@
   "name": "droneshield-qa-task",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "ui-test": "npx playwright test",
+    "api-test" : "npx playwright test --config=playwright.api.config.ts"
+  },
   "author": "Jithin Jose Jacob",
   "license": "ISC",
   "description": "QA Test for DroneShield",
