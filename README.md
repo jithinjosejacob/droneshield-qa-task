@@ -43,7 +43,7 @@ CI/CD, Docker - Dockerized UI Test which can be run in any CI/CD Tool.
 View reports using ``` npx playwright show-report``` after respective test run
 
 # CI
-Docker file has been checked and can be used to integrate to run tests on PR and on merge. github actions has not been setup.
+Docker file has been checked and can be used to integrate to run tests on PR and on merge. github actions is not full setup to run on testing PRs.
 
 # Test Architecture and Design
 
