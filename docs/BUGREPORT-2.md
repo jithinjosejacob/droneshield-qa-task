@@ -1,3 +1,5 @@
+# Note : Single bug from the app has been filed due to time taken in exploring app.
+
 # Summary - 
 API Response for find by status gives returns datatype for name instead of value
 
