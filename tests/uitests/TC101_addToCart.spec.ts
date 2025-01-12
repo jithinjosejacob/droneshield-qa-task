@@ -5,7 +5,7 @@ test.beforeEach(async ({ loginPage }) => {
     await loginPage.navigateToSauceDashboard()
 });
 
-test('Add to Cart test', async ({ cartPage,checkoutPage }) => {
+test('Add to Cart test', async ({ cartPage, checkoutPage }) => {
     await cartPage.addProductToCart('Sauce Labs Backpack')
     const checkoutPageVisibility = await checkoutPage.verifyCheckoutPageVisibility()
     expect(checkoutPageVisibility).toBeTruthy()

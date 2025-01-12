@@ -22,9 +22,9 @@ CI/CD, Docker - Dockerized UI Test which can be run in any CI/CD Tool.
 
 3) Clone the repo to your local machine
 
-4) Run ```npx playwright install`` to install browsers
+4) Run ```npx playwright install``` to install browsers
 
-5) Run ```npm install`` to install dependancies
+5) Run ```npm install``` to install dependancies
 
 # UI Tests
 
@@ -43,8 +43,8 @@ CI/CD, Docker - Dockerized UI Test which can be run in any CI/CD Tool.
 View reports using ``` npx playwright show-report``` after respective test run
 
 # CI
-Docker file has been checked and can be used to integrate to run tests on PR and on merge. github actions has not been setup.
+Docker file has been checked and can be used to integrate to run tests on PR and on merge. github actions is not full setup to run on testing PRs.
 
 # Test Architecture and Design
 
-![Alt text](docs/Testing123.png)
+![Alt text](docs/TestArch.png)
