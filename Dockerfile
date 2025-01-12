@@ -1,6 +1,6 @@
 # Dockerfile for Browser Tests
 
-FROM mcr.microsoft.com/playwright:v1.40.0-jammy AS build-only 
+FROM mcr.microsoft.com/playwright:v1.44.1-jammy AS build-only 
 ARG DEBIAN_FRONTEND=noninteractive 
 
 # Add your source package.json to docker. 
@@ -50,7 +50,7 @@ RUN npx playwright install
 RUN npm link
 
 ## APP CONTAINER 
-FROM mcr.microsoft.com/playwright:v1.40.0-jammy 
+FROM mcr.microsoft.com/playwright:v1.44.1-jammy 
 COPY --from=build-only . . 
 
 # Remove prohibited files 
