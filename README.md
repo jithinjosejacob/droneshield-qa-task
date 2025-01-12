@@ -45,7 +45,7 @@ EXERCISE-1.MD , EXERCISE-2.MD , BUGREPORT-1.MD , BUGREPORT-2.MD - Located in doc
 View reports using ``` npx playwright show-report``` after respective test run
 
 # CI
-Docker file has been checked and can be used to integrate to run tests on PR and on merge. github actions is not full setup to run on testing PRs.
+Docker file has been checked and can be used to integrate to run tests on PR and on merge. github actions is not full setup to run on testing builds on PRs and merge(CI)
 
 # Test Architecture and Design
 
