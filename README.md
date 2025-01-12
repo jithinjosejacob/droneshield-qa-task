@@ -4,7 +4,7 @@ Droneshield - QA Test Task - Jithin Jose Jacob
 
 Programming Language - TypeScript
 
-Web Automation - Playwright
+Web Automation - Playwright, used POM as the design pattern
 
 API Automation - Playwright
 
@@ -13,6 +13,8 @@ Test Runner - Playwright Test
 Reporting - Playwright HTML Report
 
 CI/CD, Docker - Dockerized UI Test which can be run in any CI/CD Tool.
+
+EXERCISE-1.MD , EXERCISE-2.MD , BUGREPORT-1.MD , BUGREPORT-2.MD - Located in docs directory
 
 # Prerequisities
 
