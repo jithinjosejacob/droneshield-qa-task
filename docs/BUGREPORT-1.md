@@ -1,3 +1,5 @@
+# Note : Single bug from the app has been filed due to time taken in exploring app.
+
 # Summary - 
 Navigating to https://www.saucedemo.com/cart.html should give user unauthorized
 
