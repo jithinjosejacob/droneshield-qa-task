@@ -14,7 +14,7 @@ As it is a backend language, assuming that there is another service written for 
 
 # DECISIONS AND REASONS 
 
-If I write tests in same repo as source code where it uses Python, Python is preferred for testing. as it would be easy to maintain codebase
+If I write tests in same repo as source code where it uses Python(given in the question), Python is preferred for testing. as it would be easy to maintain codebase
 
 I assume that developers are writing unit and integration tests using mocks for the services they are developing and has enough coverage.
 
@@ -22,7 +22,7 @@ In this sceanrio , i assume that we are doing blackbox testing , and donthave so
 
 Also assume that frontend could be written in TypeScript/JavaScript.
 
-It could be easily for frontend devs also to contribute if we use TypeScript for UI and API Testing
+It could be easily for frontend devs and other testers also to contribute if we use TypeScript for UI and API Testing
 
 Due to features like opensource, autowait and plenty of debugging features,playwright is choosen as a preferred web automation library.
 
@@ -38,3 +38,5 @@ This makes the code simple and resuable and easily extended to multiple pages.
 Tests are located in tests/uitests directory
 
 TC101_addToCart.spec - > Validating add to cart test
+
+Test 0 Make sure that Sauce Labs Backpack can be added to the Cart Successfully.

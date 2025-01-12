@@ -21,6 +21,7 @@ This would be easily for functional testers and developers also to pickup and wo
 Tests are located in tests/apitests directory
 
 TC201_statusCode.spec.ts - > Validating simple status code
+Test Case - Pets whose status is available return 200 on successful response
 
 TC202_dataHandling.spec.ts -> If test data needs to be created globally, or auth is required for tests , good to use globalsetup
 If test data needs to be created / cleaned, use before and after hooks in api tests
