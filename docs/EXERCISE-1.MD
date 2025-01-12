@@ -1,10 +1,10 @@
 # TEST-STRATEGY 
 
-Refer - Test Strategy Document -DroneShield
+Refer - Test Strategy Document -DroneShield.docx in docs
 
 # TEST PLAN
 
-Refer - TEST PLAN - DroneShield
+Refer - TEST PLAN - DroneShield.docx in docs
 
 # Assumption 
 
@@ -26,7 +26,12 @@ It could be easily for frontend devs also to contribute if we use TypeScript for
 
 Due to features like opensource, autowait and plenty of debugging features,playwright is choosen as a preferred web automation library.
 
-Used a simple Page Object Model, as suggested by Playwright team for easy design and maintenance and used fixtures for object creation for making code base clean
+Used a simple Page Object Model as the design pattern, as suggested by Playwright team for easy design and maintenance and used fixtures for object creation for making code base clean.
+
+We could resuse auth by saving local storage and using that across the tests, as it would save time in logging in every time.
+
+Test Implementation is located in pageFactory, where i have used a simple BasePage and other pages extend from BasePage, where we need to place reusable methods in BasePage.
+This makes the code simple and resuable and easily extended to multiple pages.
 
 # Tests 
 

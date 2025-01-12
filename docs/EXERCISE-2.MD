@@ -14,7 +14,7 @@ In this sceanrio , i assume that we are doing blackbox testing
 
 Since we have used Playwright for UI Testing, and would prefer same repo for keeping API Tests also there , so used Playwright for API Testing
 We sticked to same programming language and testing library
-This would be easily for functional testers to pickup and would result in easy maintenance
+This would be easily for functional testers and developers also to pickup and would result in easy maintenance
 
 # Tests 
 
