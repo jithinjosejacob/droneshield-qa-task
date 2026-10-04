@@ -3,15 +3,24 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "ui-test": "npx playwright test --config=config/playwright.ui.config.ts",
-    "api-test": "npx playwright test --config=config/playwright.api.config.ts"
+    "fetch:ui": "tsx scripts/fetchTests.ts ui",
+    "fetch:api": "tsx scripts/fetchTests.ts api",
+    "fetch:all": "npm run fetch:api && npm run fetch:ui",
+    "seed": "tsx scripts/seedTests.ts",
+    "ui-test": "npm run fetch:ui && npx playwright test --config=config/playwright.ui.config.ts",
+    "api-test": "npm run fetch:api && npx playwright test --config=config/playwright.api.config.ts",
+    "test:all": "npm run fetch:all && npx playwright test --config=config/playwright.all.config.ts"
   },
   "author": "Jithin Jose Jacob",
   "license": "ISC",
   "description": "QA Test for DroneShield",
+  "dependencies": {
+    "mongodb": "^6.9.0"
+  },
   "devDependencies": {
     "@playwright/test": "^1.44.1",
     "@types/node": "^22.10.5",
-    "dotenv": "^16.4.7"
+    "dotenv": "^16.4.7",
+    "tsx": "^4.19.2"
   }
 }

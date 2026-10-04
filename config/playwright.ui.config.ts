@@ -13,6 +13,8 @@ import { defineConfig, devices } from '@playwright/test';
 export default defineConfig({
   globalSetup: "./global-setup.ui.ts",
   testDir: '../tests/uitests/',
+  /* Only the DB-driven runner executes; legacy TC-specs remain for reference. */
+  testMatch: '**/dynamic.spec.ts',
   reportSlowTests : null,
   /* Run tests in files in parallel */
   fullyParallel: true,

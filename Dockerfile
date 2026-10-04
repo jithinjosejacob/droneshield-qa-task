@@ -76,6 +76,9 @@ RUN rm -rf /usr/lib/apt/methods/rsh \
             /var/lib/dpkg/alternatives/rsh \ 
             /run/shm 
 
-WORKDIR /app 
+WORKDIR /app
 
+# Tests are fetched from MongoDB at run time. Supply the connection at runtime, e.g.
+#   docker run -e MONGO_URI=... -e MONGO_DB=qa -e TESTS_COLLECTION=tests \
+#              -e BASE_URL=... -e SAUCEDEMO_USERNAME=... -e SAUCEDEMO_PASSWORD=... <image>
 CMD npm run ui-test

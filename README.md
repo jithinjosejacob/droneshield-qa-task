@@ -28,17 +28,32 @@ EXERCISE-1.MD , EXERCISE-2.MD , BUGREPORT-1.MD , BUGREPORT-2.MD - Located in doc
 
 5) Run ```npm install``` to install dependancies
 
+6) A reachable MongoDB instance (external, e.g. Atlas or local). Set ```MONGO_URI``` in your ```.env```.
+
+# Dynamic (DB-driven) tests
+
+Tests are not hard-coded as spec files any more — they live as JSON documents in
+MongoDB and are fetched at run time. Adding a test is a single DB insert; no code
+change and no redeploy. See [docs/EXERCISE-3.md](docs/EXERCISE-3.md) for the schema and
+the full design (including why the fetch runs before Playwright).
+
+Seed the database with the migrated starter tests:
+
+```
+npm run seed
+```
+
 # UI Tests
 
-1) Follow the .env.example to create a .env file in the root directory
+1) Follow the .env.example to create a .env file in the root directory (includes MONGO_URI)
 
 2) Obtain the credentials from ```https://www.saucedemo.com/```
 
-3) Run tests using ```npm run ui-test```
+3) Run tests using ```npm run ui-test``` (fetches UI docs from Mongo, then runs them)
 
 # API Tests
 
-1) Run tests using ```npm run api-test```
+1) Run tests using ```npm run api-test``` (fetches API docs from Mongo, then runs them)
 
 # Test Reports
 
