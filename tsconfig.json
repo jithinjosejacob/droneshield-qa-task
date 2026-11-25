@@ -19,5 +19,6 @@
       "paths": {
         "@myhelper/*": ["packages/myhelper/*"] // This mapping is relative to "baseUrl".
       }
-    }
+    },
+    "exclude": ["node_modules", "webapp"]
   }

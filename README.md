@@ -16,6 +16,8 @@ CI/CD, Docker - Dockerized UI Test which can be run in any CI/CD Tool.
 
 EXERCISE-1.MD , EXERCISE-2.MD , BUGREPORT-1.MD , BUGREPORT-2.MD - Located in docs directory
 
+Web App (author / promote / run test cases from a UI) - React + FastAPI in `webapp/`. See [docs/EXERCISE-4.md](docs/EXERCISE-4.md).
+
 # Prerequisities
 
 1) Nodejs stable version should be installed on your local

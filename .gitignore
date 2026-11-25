@@ -7,3 +7,12 @@ node_modules
 .env
 storage
 .generated/
+
+# webapp
+webapp/backend/.venv/
+webapp/backend/run-artifacts/
+webapp/backend/__pycache__/
+webapp/backend/app/__pycache__/
+webapp/backend/app/routers/__pycache__/
+webapp/frontend/node_modules/
+webapp/frontend/dist/

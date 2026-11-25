@@ -33,15 +33,25 @@ function validate(docs: unknown[], type: TestType): void {
   });
 }
 
+function parseIds(): string[] | undefined {
+  // Optional: run a selected subset by id (comma-separated). Used by the web app.
+  const raw = process.env.TEST_IDS;
+  if (!raw) return undefined;
+  const ids = raw.split(',').map((s) => s.trim()).filter(Boolean);
+  return ids.length > 0 ? ids : undefined;
+}
+
 async function main(): Promise<void> {
   const type = parseType(process.argv[2]);
-  const docs = await fetchTests(type);
+  const ids = parseIds();
+  const docs = await fetchTests(type, { ids });
   validate(docs, type);
 
   fs.mkdirSync(GENERATED_DIR, { recursive: true });
   fs.writeFileSync(generatedFileFor(type), JSON.stringify(docs, null, 2));
 
-  console.log(`Fetched ${docs.length} enabled ${type} test(s) -> ${generatedFileFor(type)}`);
+  const scope = ids ? `${docs.length} selected` : `${docs.length} enabled`;
+  console.log(`Fetched ${scope} ${type} test(s) -> ${generatedFileFor(type)}`);
 }
 
 main()
